@@ -1,0 +1,32 @@
+# 沙箱（含 Termux 源码副本，非交付物）
+workspace/
+
+# 凭据 / 密钥（绝不入库）
+*.key
+*.keystore
+*.pem
+.env
+auth.json
+local.properties
+
+# 构建产物
+build/
+.gradle/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# 临时 / 备份 / 日志
+*.bak
+*.tmp
+*.log
+*.orig
+.DS_Store
+
+# ===== 内部文档（决策/迭代/规范/评估，只留本地，不进公开仓库）=====
+# 2026-09-20 用户拍板：公开仓库只放脱敏后的原文件/交付物，不放项目决策、迭代、agents 类文档。
+AGENTS.md
+设计定案.md
+优化清单.md
+评估-嵌入与无障碍.md
